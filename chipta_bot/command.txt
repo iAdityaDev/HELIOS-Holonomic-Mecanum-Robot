@@ -1,6 +1,6 @@
 docker run -it --net=host \
     -e ROS_DOMAIN_ID=10 \
-    -v /home/dev/chipta_ws/:/chipta_ws/ \
+    -v /home/deviant/Chipta_ws/:/Chipta_ws/ \
     -v /tmp/.X11-unix:/tmp/.X11-unix \
     -e DISPLAY=$DISPLAY \
     --name chipta_container \

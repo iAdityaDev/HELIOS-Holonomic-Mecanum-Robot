@@ -17,7 +17,7 @@ RUN echo "deb [arch=$(dpkg --print-architecture)] http://packages.ros.org/ros2/u
     
 RUN apt update && apt install -y ros-jazzy-desktop
 RUN apt install -y python3-colcon-common-extensions ros-dev-tools
-RUN apt install -y ros-jazzy-xacro ros-jazzy-joint-state-publisher-gui ros-jazzy-xacro
+RUN apt install -y ros-jazzy-xacro ros-jazzy-joint-state-publisher-gui
 
 RUN curl -sSL https://packages.osrfoundation.org/gazebo.gpg | apt-key add -
 RUN echo "deb http://packages.osrfoundation.org/gazebo/ubuntu \
