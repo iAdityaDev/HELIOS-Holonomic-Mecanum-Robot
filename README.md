@@ -85,7 +85,7 @@ Instead of setting up all prerequisites on your local machine, you can run the e
     -e DISPLAY=$DISPLAY \
     --name helios_container \
     helios_image:latest
-
+<!--
 ## Usage
 Our package consists of three directories as follows:-
 
@@ -132,7 +132,7 @@ ros2 run mr_robot_navigation logged_waypoint_follower
 https://github.com/user-attachments/assets/89ecf916-f9e9-4ee3-bdf6-f13138252aca
 
 
-
+-->
 
 
 
