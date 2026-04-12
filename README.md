@@ -1,6 +1,15 @@
+
+
 <br />
 <div align="center">
  <h3 align="center">HELIOS: Holonomic-Mecanum-Robot</h3>
+
+ <p align="center">
+  <a href="images/helios.png">
+    <img src="images/helios.png" alt="Logo" width="550" height="550">
+  </a>
+</p>
+
   <p align="center">
     This is the repo for the <a href="https://github.com/iAdityaDev/HELIOS-Holonomic-Mecanum-Robot.git">Four-Mecanum-Wheeled-AMR</a> Project, Built a holonomic mecanum-wheeled robot capable of precise omnidirectional motion, leveraging ROS 2, SLAM, and sensor fusion for robust autonomous navigation in constrained indoor environments.
     <p align="center">
