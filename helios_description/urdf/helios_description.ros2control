@@ -1,0 +1,4 @@
+<?xml version="1.0" ?>
+<robot name="helios_description" xmlns:xacro="http://www.ros.org/wiki/xacro" >
+
+</robot>

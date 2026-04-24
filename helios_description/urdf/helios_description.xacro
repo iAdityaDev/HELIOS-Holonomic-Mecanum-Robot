@@ -1,9 +1,9 @@
 <?xml version="1.0" ?>
 <robot name="chipta" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
-<xacro:include filename="$(find chipta_bot)/urdf/materials.xacro" />
-<xacro:include filename="$(find chipta_bot)/urdf/chipta.ros2control" />
-<xacro:include filename="$(find chipta_bot)/urdf/chipta.gazebo" />
+<xacro:include filename="$(find helios_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find helios_description)/urdf/helios_description.ros2control" />
+<xacro:include filename="$(find helios_description)/urdf/helios_description.gazebo" />
 
 <link name="base_link">
   <inertial>
@@ -14,14 +14,14 @@
   <visual>
     <origin xyz="0 0 0" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find chipta_bot)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find helios_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="purple"/>
   </visual>
   <collision>
     <origin xyz="0 0 0" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find chipta_bot)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find helios_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -35,14 +35,14 @@
   <visual>
     <origin xyz="-0.005 -0.0 -0.015" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find chipta_bot)/meshes/IMU_v1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find helios_description)/meshes/IMU_v1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="light_blue"/>
   </visual>
   <collision>
     <origin xyz="-0.005 -0.0 -0.015" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find chipta_bot)/meshes/IMU_v1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find helios_description)/meshes/IMU_v1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -56,14 +56,14 @@
   <visual>
     <origin xyz="0.03 -0.0 -0.018" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find chipta_bot)/meshes/GPS_v1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find helios_description)/meshes/GPS_v1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="green"/>
   </visual>
   <collision>
     <origin xyz="0.03 -0.0 -0.018" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find chipta_bot)/meshes/GPS_v1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find helios_description)/meshes/GPS_v1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -77,14 +77,14 @@
   <visual>
     <origin xyz="-0.1125 0.0015 -0.04" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find chipta_bot)/meshes/Lidar_v1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find helios_description)/meshes/Lidar_v1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="blue"/>
   </visual>
   <collision>
     <origin xyz="-0.1125 0.0015 -0.04" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find chipta_bot)/meshes/Lidar_v1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find helios_description)/meshes/Lidar_v1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -100,14 +100,14 @@
   <visual>
     <origin xyz="-0.064778 -0.085 -0.030131" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find chipta_bot)/meshes/Wheel_front_left_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find helios_description)/meshes/Wheel_front_left_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
     <origin xyz="-0.064778 -0.085 -0.030131" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find chipta_bot)/meshes/Wheel_front_left_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find helios_description)/meshes/Wheel_front_left_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -121,14 +121,14 @@
   <visual>
     <origin xyz="-0.064778 0.085 -0.030131" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find chipta_bot)/meshes/Wheel_front_right_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find helios_description)/meshes/Wheel_front_right_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
     <origin xyz="-0.064778 0.085 -0.030131" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find chipta_bot)/meshes/Wheel_front_right_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find helios_description)/meshes/Wheel_front_right_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -142,14 +142,14 @@
   <visual>
     <origin xyz="0.064941 0.085 -0.031781" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find chipta_bot)/meshes/Wheel_rear_right_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find helios_description)/meshes/Wheel_rear_right_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
     <origin xyz="0.064941 0.085 -0.031781" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find chipta_bot)/meshes/Wheel_rear_right_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find helios_description)/meshes/Wheel_rear_right_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -163,14 +163,14 @@
   <visual>
     <origin xyz="0.064941 -0.085 -0.030131" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find chipta_bot)/meshes/Wheel_rear_left_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find helios_description)/meshes/Wheel_rear_left_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
     <origin xyz="0.064941 -0.085 -0.030131" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find chipta_bot)/meshes/Wheel_rear_left_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find helios_description)/meshes/Wheel_rear_left_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>

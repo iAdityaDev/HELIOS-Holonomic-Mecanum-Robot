@@ -7,7 +7,7 @@ import math
 # import ik_solver as inverse_kine
 # import ik_solver as ik_solver
 
-class Chipta_bot(Node):
+class Helios_IK(Node):
     def __init__(self):
         super().__init__('Teleop')
 
@@ -121,7 +121,7 @@ class Chipta_bot(Node):
 
 def main(args=None):
     rclpy.init(args=args)
-    node = Chipta_bot()
+    node = Helios_IK()
 
     try:
         rclpy.spin(node)
