@@ -5,7 +5,7 @@ from launch_ros.actions import Node
 def generate_launch_description():
 
     twist2pwm = Node(
-        package='chipta_bot',
+        package='helios_description',
         executable='twist_2_pwm',
         name='twist2pwm',
         output = 'screen',
@@ -13,7 +13,7 @@ def generate_launch_description():
     )
 
     diff_tf = Node(
-        package='chipta_bot',
+        package='helios_description',
         executable='diff_tf',
         name='diff_tf',
         output = 'screen',
@@ -21,7 +21,7 @@ def generate_launch_description():
     )
 
     fkenc = Node(
-        package='chipta_bot',
+        package='helios_description',
         executable='fkenc',
         name='fkenc',
         output = 'screen',

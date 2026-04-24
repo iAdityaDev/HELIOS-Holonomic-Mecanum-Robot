@@ -2,7 +2,7 @@ import os
 from glob import glob    # all files /launch*
 from setuptools import find_packages, setup # findpackage->__init__ is where , setup->how to install this pac
 
-package_name = 'chipta_bot'
+package_name = 'helios_description'
 
 setup(
     name=package_name,
@@ -31,9 +31,9 @@ setup(
 
     entry_points={
         'console_scripts': [
-            'twist_2_pwm = chipta_bot.twist_2_pwm:main',
-            'diff_tf = chipta_bot.diff_tf:main',
-            'fkenc = chipta_bot.fkenc:main',
+            'twist_2_pwm = helios_description.twist_2_pwm:main',
+            'diff_tf = helios_description.diff_tf:main',
+            'fkenc = helios_description.fkenc:main',
         ],
     },
 )
