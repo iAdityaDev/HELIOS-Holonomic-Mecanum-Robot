@@ -1,14 +1,14 @@
 docker run -it --net=host \
     -e ROS_DOMAIN_ID=10 \
-    -v /home/deviant/Chipta_ws/:/Chipta_ws/ \
+    -v /home/deviant/helios_ws/:/helios_ws/ \
     -v /tmp/.X11-unix:/tmp/.X11-unix \
     -e DISPLAY=$DISPLAY \
-    --name chipta_container \
-    chipta_image:latest
+    --name helios_container \
+    helios_image:latest
 
-docker exec -it chipta_container bash
+docker exec -it helios_container bash
 
-docker start -ai chipta_container
+docker start -ai helios_container
 | Flag                               | Purpose                                                  |
 | ---------------------------------- | -------------------------------------------------------- |
 | `--net=host`                       | Allows ROS 2 multicast → Topics visible inside container |
@@ -24,12 +24,12 @@ xhost +local:root
 docker run -it --gpus all \
   --net=host \
   -e ROS_DOMAIN_ID=10 \
-  -v /home/dev/chipta_ws/:/chipta_ws/ \
+  -v /home/dev/helios_ws/:/helios_ws/ \
   -e DISPLAY=$DISPLAY \
   -e QT_X11_NO_MITSHM=1 \
   -e NVIDIA_VISIBLE_DEVICES=all \
   -e NVIDIA_DRIVER_CAPABILITIES=compute,utility,graphics \
   -v /tmp/.X11-unix:/tmp/.X11-unix \
-  --name chipta_container \
-  chipta_image:latest
+  --name helios_container \
+  helios_image:latest
 
