@@ -193,28 +193,28 @@
   <child link="Lidar_v1_1"/>
 </joint>
 
-<joint name="Revolute 24" type="continuous">
+<joint name="wheel_front_left_joint" type="continuous">
   <origin xyz="0.064778 0.085 0.030131" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="Wheel_front_left_1"/>
   <axis xyz="0.0 1.0 0.0"/>
 </joint>
 
-<joint name="Revolute 25" type="continuous">
+<joint name="wheel_front_right_joint" type="continuous">
   <origin xyz="0.064778 -0.085 0.030131" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="Wheel_front_right_1"/>
   <axis xyz="0.0 -1.0 0.0"/>
 </joint>
 
-<joint name="Revolute 27" type="continuous">
+<joint name="wheel_rear_right_joint" type="continuous">
   <origin xyz="-0.064941 -0.085 0.031781" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="Wheel_rear_right_1"/>
   <axis xyz="0.0 1.0 0.0"/>
 </joint>
 
-<joint name="Revolute 28" type="continuous">
+<joint name="wheel_rear_left_joint" type="continuous">
   <origin xyz="-0.064941 0.085 0.030131" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="Wheel_rear_left_1"/>
