@@ -54,11 +54,19 @@ def generate_launch_description():
         arguments=['-d', rviz_config_file],
         output='screen'
     )
+    
+    static_transform_odom_to_base_footprint = Node(
+      package='tf2_ros',
+      executable='static_transform_publisher',
+      name='odom_to_base_footprint_tf',
+      arguments=['0', '0', '0', '0', '0', '0', 'odom', 'base_footprint']
+    )
 
     return LaunchDescription([
         gui_arg,
         robot_state_publisher_node,
         joint_state_publisher_node,
         joint_state_publisher_gui_node,
-        rviz_node
+        rviz_node,
+        static_transform_odom_to_base_footprint,
     ])

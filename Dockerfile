@@ -34,7 +34,9 @@ RUN apt-get update && apt-get install -y curl gnupg lsb-release && \
 
 RUN apt-get update && apt-get install -y \
     ros-jazzy-ros-gz-sim \
-    ros-jazzy-ros-gz-bridge && \
+    ros-jazzy-ros-gz-bridge \
+    ros-jazzy-ros2-control \
+    ros-jazzy-ros2-controllers && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
 
 

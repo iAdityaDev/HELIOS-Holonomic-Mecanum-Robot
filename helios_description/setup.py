@@ -34,6 +34,7 @@ setup(
             'twist_2_pwm = helios_description.twist_2_pwm:main',
             'diff_tf = helios_description.diff_tf:main',
             'fkenc = helios_description.fkenc:main',
+            'odom = helios_description.odom:main',
         ],
     },
 )
