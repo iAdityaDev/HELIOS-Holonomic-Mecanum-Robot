@@ -6,7 +6,7 @@
         <hardware>
             <!-- <plugin>mock_components/GenericSystem</plugin> -->
             <plugin>gz_ros2_control/GazeboSimSystem</plugin>
-            <param name="calculate_dynamics">true</param>
+            <!-- <param name="calculate_dynamics">true</param> -->
         </hardware>
 
         <joint name="wheel_front_left_joint">

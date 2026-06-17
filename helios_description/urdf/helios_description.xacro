@@ -11,19 +11,22 @@
   <inertial>
     <origin xyz="0.006285285436363787 2.3801220083224483e-05 0.02118626436883177" rpy="0 0 0"/>
     <mass value="3.955246639227324"/>
-    <inertia ixx="0.017496" iyy="0.029781" izz="0.046394" ixy="2.8e-05" iyz="-1e-06" ixz="3.5e-05"/>
+    <inertia ixx="0.017496" iyy="0.029781" izz="0.046394"
+             ixy="2.8e-05" iyz="-1e-06" ixz="3.5e-05"/>
   </inertial>
   <visual>
     <origin xyz="0 0 0" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find helios_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find helios_description)/meshes/base_link.stl"
+            scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="purple"/>
   </visual>
   <collision>
     <origin xyz="0 0 0" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find helios_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find helios_description)/meshes/base_link.stl"
+            scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -37,14 +40,16 @@
   <visual>
     <origin xyz="-0.005 -0.0 -0.015" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find helios_description)/meshes/IMU_v1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find helios_description)/meshes/IMU_v1_1.stl"
+            scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="light_blue"/>
   </visual>
   <collision>
     <origin xyz="-0.005 -0.0 -0.015" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find helios_description)/meshes/IMU_v1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find helios_description)/meshes/IMU_v1_1.stl"
+            scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -58,14 +63,16 @@
   <visual>
     <origin xyz="0.03 -0.0 -0.018" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find helios_description)/meshes/GPS_v1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find helios_description)/meshes/GPS_v1_1.stl"
+            scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="green"/>
   </visual>
   <collision>
     <origin xyz="0.03 -0.0 -0.018" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find helios_description)/meshes/GPS_v1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find helios_description)/meshes/GPS_v1_1.stl"
+            scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -74,158 +81,181 @@
   <inertial>
     <origin xyz="-0.0021965658486673423 2.561119446363924e-05 0.007120513681703584" rpy="0 0 0"/>
     <mass value="0.088236472062788"/>
-    <inertia ixx="6e-06" iyy="1.1e-05" izz="1.4e-05" ixy="-0.0" iyz="0.0" ixz="2e-06"/>
+    <inertia ixx="6e-06" iyy="1.1e-05" izz="1.4e-05"
+             ixy="-0.0" iyz="0.0" ixz="2e-06"/>
   </inertial>
   <visual>
     <origin xyz="-0.1125 0.0015 -0.04" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find helios_description)/meshes/Lidar_v1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find helios_description)/meshes/Lidar_v1_1.stl"
+            scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="blue"/>
   </visual>
   <collision>
     <origin xyz="-0.1125 0.0015 -0.04" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find helios_description)/meshes/Lidar_v1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find helios_description)/meshes/Lidar_v1_1.stl"
+            scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
+<!-- ══════════════════════════════════════════════════════════════
+     WHEEL LINKS
+     KEY FIXES:
+       1. collision origin is 0 0 0  (joint handles placement)
+       2. collision geometry is sphere radius=0.04
+       3. inertial origin is 0 0 0
+       4. inertia values correct for sphere m=0.1kg r=0.04m
+     ══════════════════════════════════════════════════════════════ -->
 
-
-<link name="Wheel_front_left_1">  
+<link name="Wheel_front_left_1">
   <inertial>
-    <origin xyz="-1.27101263236451e-07 0.013847399301558358 -3.5503662683053494e-07" rpy="0 0 0"/>
-    <mass value="0.032871818242545134"/>
-    <inertia ixx="1e-05" iyy="1.8e-05" izz="1e-05" ixy="0.0" iyz="0.0" ixz="0.0"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <mass value="0.1"/>
+    <inertia ixx="6.4e-05" iyy="6.4e-05" izz="6.4e-05"
+             ixy="0.0" iyz="0.0" ixz="0.0"/>
   </inertial>
   <visual>
     <origin xyz="-0.064778 -0.085 -0.030131" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find helios_description)/meshes/Wheel_front_left_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find helios_description)/meshes/Wheel_front_left_1.stl"
+            scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
+  <!-- sphere at 0 0 0 — joint origin places it at correct world position -->
   <collision>
-    <origin xyz="-0.064778 -0.085 -0.030131" rpy="0 0 0"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find helios_description)/meshes/Wheel_front_left_1.stl" scale="0.001 0.001 0.001"/>
+      <sphere radius="0.04"/>
     </geometry>
   </collision>
 </link>
 
 <link name="Wheel_front_right_1">
   <inertial>
-    <origin xyz="-1.545012792147915e-07 -0.013722805579174657 -4.273110922881074e-07" rpy="0 0 0"/>
-    <mass value="0.0361026849885689"/>
-    <inertia ixx="1.2e-05" iyy="2.1e-05" izz="1.2e-05" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <mass value="0.1"/>
+    <inertia ixx="6.4e-05" iyy="6.4e-05" izz="6.4e-05"
+             ixy="0.0" iyz="0.0" ixz="-0.0"/>
   </inertial>
   <visual>
     <origin xyz="-0.064778 0.085 -0.030131" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find helios_description)/meshes/Wheel_front_right_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find helios_description)/meshes/Wheel_front_right_1.stl"
+            scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
-    <origin xyz="-0.064778 0.085 -0.030131" rpy="0 0 0"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find helios_description)/meshes/Wheel_front_right_1.stl" scale="0.001 0.001 0.001"/>
+      <sphere radius="0.04"/>
     </geometry>
   </collision>
 </link>
 
 <link name="Wheel_rear_right_1">
   <inertial>
-    <origin xyz="2.3534519708046098e-08 -0.013847399301558358 -3.560736444099821e-07" rpy="0 0 0"/>
-    <mass value="0.032871818242545016"/>
-    <inertia ixx="1e-05" iyy="1.8e-05" izz="1e-05" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <mass value="0.1"/>
+    <inertia ixx="6.4e-05" iyy="6.4e-05" izz="6.4e-05"
+             ixy="0.0" iyz="-0.0" ixz="-0.0"/>
   </inertial>
   <visual>
     <origin xyz="0.064941 0.085 -0.031781" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find helios_description)/meshes/Wheel_rear_right_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find helios_description)/meshes/Wheel_rear_right_1.stl"
+            scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
-    <origin xyz="0.064941 0.085 -0.031781" rpy="0 0 0"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find helios_description)/meshes/Wheel_rear_right_1.stl" scale="0.001 0.001 0.001"/>
+      <sphere radius="0.04"/>
     </geometry>
   </collision>
 </link>
 
 <link name="Wheel_rear_left_1">
   <inertial>
-    <origin xyz="5.994378951545976e-08 0.013722802958087754 -4.3329028434624384e-07" rpy="0 0 0"/>
-    <mass value="0.03610268483883613"/>
-    <inertia ixx="1.2e-05" iyy="2.1e-05" izz="1.2e-05" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <mass value="0.1"/>
+    <inertia ixx="6.4e-05" iyy="6.4e-05" izz="6.4e-05"
+             ixy="0.0" iyz="-0.0" ixz="0.0"/>
   </inertial>
   <visual>
     <origin xyz="0.064941 -0.085 -0.030131" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find helios_description)/meshes/Wheel_rear_left_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find helios_description)/meshes/Wheel_rear_left_1.stl"
+            scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
-    <origin xyz="0.064941 -0.085 -0.030131" rpy="0 0 0"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find helios_description)/meshes/Wheel_rear_left_1.stl" scale="0.001 0.001 0.001"/>
+      <sphere radius="0.04"/>
     </geometry>
   </collision>
 </link>
 
+<!-- ══════════════════════════════════════════════════════════════
+     JOINTS — unchanged
+     ══════════════════════════════════════════════════════════════ -->
+
 <joint name="fixed_base_joint" type="fixed">
-  <parent link="base_footprint" />
-  <child link="base_link" />
-  <origin xyz="0 0 0" rpy="0 0 0" />
+  <parent link="base_footprint"/>
+  <child  link="base_link"/>
+  <origin xyz="0 0 0" rpy="0 0 0"/>
 </joint>
 
 <joint name="Rigid 14" type="fixed">
   <origin xyz="0.005 0.0 0.015" rpy="0 0 0"/>
   <parent link="base_link"/>
-  <child link="IMU_v1_1"/>
+  <child  link="IMU_v1_1"/>
 </joint>
 
 <joint name="Rigid 22" type="fixed">
   <origin xyz="-0.03 0.0 0.018" rpy="0 0 0"/>
   <parent link="base_link"/>
-  <child link="GPS_v1_1"/>
+  <child  link="GPS_v1_1"/>
 </joint>
 
 <joint name="Rigid 23" type="fixed">
   <origin xyz="0.1125 -0.0015 0.04" rpy="0 0 0"/>
   <parent link="base_link"/>
-  <child link="Lidar_v1_1"/>
+  <child  link="Lidar_v1_1"/>
 </joint>
 
 <joint name="wheel_front_left_joint" type="continuous">
   <origin xyz="0.064778 0.085 0.030131" rpy="0 0 0"/>
   <parent link="base_link"/>
-  <child link="Wheel_front_left_1"/>
+  <child  link="Wheel_front_left_1"/>
   <axis xyz="0.0 1.0 0.0"/>
 </joint>
 
 <joint name="wheel_front_right_joint" type="continuous">
   <origin xyz="0.064778 -0.085 0.030131" rpy="0 0 0"/>
   <parent link="base_link"/>
-  <child link="Wheel_front_right_1"/>
+  <child  link="Wheel_front_right_1"/>
   <axis xyz="0.0 1.0 0.0"/>
 </joint>
 
 <joint name="wheel_rear_right_joint" type="continuous">
   <origin xyz="-0.064941 -0.085 0.031781" rpy="0 0 0"/>
   <parent link="base_link"/>
-  <child link="Wheel_rear_right_1"/>
+  <child  link="Wheel_rear_right_1"/>
   <axis xyz="0.0 1.0 0.0"/>
 </joint>
 
 <joint name="wheel_rear_left_joint" type="continuous">
   <origin xyz="-0.064941 0.085 0.030131" rpy="0 0 0"/>
   <parent link="base_link"/>
-  <child link="Wheel_rear_left_1"/>
+  <child  link="Wheel_rear_left_1"/>
   <axis xyz="0.0 1.0 0.0"/>
 </joint>
 

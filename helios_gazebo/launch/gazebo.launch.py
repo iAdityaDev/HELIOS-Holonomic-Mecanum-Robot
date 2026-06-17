@@ -16,6 +16,7 @@ def generate_launch_description():
     # Package Directories
     pkg_ros_gz_sim = get_package_share_directory('ros_gz_sim')
     pkg_ros_gz_rbot = get_package_share_directory('helios_description')
+    pkg_gz = get_package_share_directory('helios_gazebo')
 
     # Parse robot description from xacro
     robot_description_file = os.path.join(pkg_ros_gz_rbot, 'urdf', 'helios_description.xacro')
@@ -26,6 +27,16 @@ def generate_launch_description():
     )
     robot_description = {'robot_description': robot_description_config.toxml()}
 
+    world_file = os.path.join(
+        pkg_gz,
+        "worlds",
+        "test_world.sdf"
+    )
+    gazebo_model_path = AppendEnvironmentVariable(
+        'GZ_SIM_RESOURCE_PATH',
+        os.path.join(pkg_gz, 'models')
+    )
+    
     # Start Robot state publisher
     robot_state_publisher = Node(
         package='robot_state_publisher',
@@ -39,7 +50,7 @@ def generate_launch_description():
     gazebo = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(join(pkg_ros_gz_sim, "launch", "gz_sim.launch.py")),
         launch_arguments={
-            "gz_args" : '-r -v 4 empty.sdf'
+            "gz_args": f"-r -v 4 {world_file}"
         }.items()
     )
 
@@ -73,6 +84,7 @@ def generate_launch_description():
     return LaunchDescription(
         [
             # Nodes and Launches
+            gazebo_model_path,
             gazebo,
             spawn,
             start_gazebo_ros_bridge_cmd,
