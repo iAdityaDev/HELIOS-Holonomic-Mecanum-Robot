@@ -7,21 +7,16 @@
 
 
 <xacro:include filename="$(find helios_description)/urdf/materials.xacro" />
-<!-- <xacro:include filename="$(find helios_description)/urdf/helios_description.ros2control.xacro" /> -->
 <xacro:include filename="$(find helios_description)/urdf/helios_description.gazebo" />
 
-<xacro:include filename="$(find helios_description)/urdf/velocity_control_plugin.urdf.xacro" />
-<xacro:load_velocity_control_plugin use_gazebo="$(arg use_gazebo)"/>
-
+<!-- ros2_control hardware interface block -->
 <xacro:include filename="$(find helios_description)/urdf/gazebo_sim_ros2_control.urdf.xacro" />
-<xacro:load_gazebo_sim_ros2_control_plugin
-  robot_name="$(arg robot_name)"
-  use_gazebo="$(arg use_gazebo)"/>
 
-<xacro:include filename="$(find helios_description)/urdf/helios_ros2_control.urdf.xacro" />
-<xacro:helios_ros2_control
-  prefix="$(arg prefix)"
-  use_gazebo="$(arg use_gazebo)"/>
+<!-- Gazebo plugin that loads gz_ros2_control -->
+<xacro:include filename="$(find helios_description)/urdf/helios_description.ros2control.xacro" />
+<xacro:load_gazebo_sim_ros2_control_plugin robot_name="helios" use_gazebo="true"/>
+
+
 
 
 <link name="base_footprint"/>

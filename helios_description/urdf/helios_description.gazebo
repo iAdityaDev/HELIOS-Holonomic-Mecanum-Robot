@@ -7,13 +7,6 @@
 <xacro:property name="gps_color" value="Gazebo/Black" />
 <xacro:property name="lidar_color" value="Gazebo/Blue" />
 
-<!-- <gazebo>
-  <plugin filename="gz_ros2_control-system"
-          name="gz_ros2_control::GazeboSimROS2ControlPlugin">
-    <parameters>$(find helios_description)/config/controllers.yaml</parameters>
-  </plugin>
-</gazebo> -->
-
 <gazebo reference="base_link">
   <material>${body_color}</material>
   <mu1>0.2</mu1>

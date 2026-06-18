@@ -32,6 +32,7 @@
 
   <export>
     <build_type>ament_cmake</build_type>
+    <controller_interface plugin="${prefix}/mecanum_drive_plugin.xml"/>
   </export>
-  
+
 </package>
