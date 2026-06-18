@@ -36,7 +36,7 @@
   <self_collide>true</self_collide>
 </gazebo>
 
-<gazebo reference="Wheel_front_left_1">
+<!-- <gazebo reference="Wheel_front_left_1">
   <material>${wheel_color}</material>
   <mu1>0.2</mu1>
   <mu2>0.2</mu2>
@@ -62,6 +62,51 @@
   <mu1>0.2</mu1>
   <mu2>0.2</mu2>
   <self_collide>true</self_collide>
+</gazebo> -->
+
+
+<gazebo reference="Wheel_front_left_1">
+  <material>${wheel_color}</material>
+  <mu1>1.0</mu1>
+  <mu2>0.5</mu2>
+  <fdir1 expressed_in="Wheel_front_left_1">1 1 0</fdir1>
+  <kp>1000000.0</kp>
+  <kd>1.0</kd>
+  <minDepth>0.001</minDepth>
+  <self_collide>false</self_collide>
+</gazebo>
+
+<gazebo reference="Wheel_front_right_1">
+  <material>${wheel_color}</material>
+  <mu1>1.0</mu1>
+  <mu2>0.5</mu2>
+  <fdir1 expressed_in="Wheel_front_right_1">1 -1 0</fdir1>
+  <kp>1000000.0</kp>
+  <kd>1.0</kd>
+  <minDepth>0.001</minDepth>
+  <self_collide>false</self_collide>
+</gazebo>
+
+<gazebo reference="Wheel_rear_left_1">
+  <material>${wheel_color}</material>
+  <mu1>1.0</mu1>
+  <mu2>0.5</mu2>
+  <fdir1 expressed_in="Wheel_rear_left_1">1 -1 0</fdir1>
+  <kp>1000000.0</kp>
+  <kd>1.0</kd>
+  <minDepth>0.001</minDepth>
+  <self_collide>false</self_collide>
+</gazebo>
+
+<gazebo reference="Wheel_rear_right_1">
+  <material>${wheel_color}</material>
+  <mu1>1.0</mu1>
+  <mu2>0.5</mu2>
+  <fdir1 expressed_in="Wheel_rear_right_1">1 1 0</fdir1>
+  <kp>1000000.0</kp>
+  <kd>1.0</kd>
+  <minDepth>0.001</minDepth>
+  <self_collide>false</self_collide>
 </gazebo>
 
 </robot>
