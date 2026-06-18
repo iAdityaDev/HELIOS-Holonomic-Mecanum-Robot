@@ -35,7 +35,7 @@
             <point>2.69 -1.72</point>
             <point>2.54 -1.59</point>
 
-            <height>2.0</height>
+            <height>0.35</height>
           </polyline>
         </geometry>
       </collision>
@@ -54,7 +54,7 @@
             <point>2.69 -1.72</point>
             <point>2.54 -1.59</point>
 
-            <height>2.0</height>
+            <height>0.35</height>
           </polyline>
         </geometry>
         <material>
@@ -101,7 +101,7 @@
             <point>0.314 -3.18</point>
             <point>-1.37e-17 -3.2</point>
 
-            <height>2.0</height>
+            <height>0.35</height>
           </polyline>
         </geometry>
       </collision>
@@ -128,7 +128,7 @@
             <point>0.314 -3.18</point>
             <point>-1.37e-17 -3.2</point>
 
-            <height>2.0</height>
+            <height>0.35</height>
           </polyline>
         </geometry>
         <material>
@@ -167,7 +167,7 @@
             <point>-2.69 -1.72</point>
             <point>-2.82 -1.51</point>
 
-            <height>2.0</height>
+            <height>0.35</height>
           </polyline>
         </geometry>
       </collision>
@@ -186,7 +186,7 @@
             <point>-2.69 -1.72</point>
             <point>-2.82 -1.51</point>
 
-            <height>2.0</height>
+            <height>0.35</height>
           </polyline>
         </geometry>
         <material>
@@ -225,7 +225,7 @@
             <point>-3.06 0.929</point>
             <point>-2.96 1.22</point>
 
-            <height>2.0</height>
+            <height>0.35</height>
           </polyline>
         </geometry>
       </collision>
@@ -244,7 +244,7 @@
             <point>-3.06 0.929</point>
             <point>-2.96 1.22</point>
 
-            <height>2.0</height>
+            <height>0.35</height>
           </polyline>
         </geometry>
         <material>
@@ -291,7 +291,7 @@
             <point>-0.624 3.14</point>
             <point>-0.314 3.18</point>
 
-            <height>2.0</height>
+            <height>0.35</height>
           </polyline>
         </geometry>
       </collision>
@@ -318,7 +318,7 @@
             <point>-0.624 3.14</point>
             <point>-0.314 3.18</point>
 
-            <height>2.0</height>
+            <height>0.35</height>
           </polyline>
         </geometry>
         <material>
@@ -357,7 +357,7 @@
             <point>2.54 1.59</point>
             <point>2.69 1.72</point>
 
-            <height>2.0</height>
+            <height>0.35</height>
           </polyline>
         </geometry>
       </collision>
@@ -376,7 +376,7 @@
             <point>2.54 1.59</point>
             <point>2.69 1.72</point>
 
-            <height>2.0</height>
+            <height>0.35</height>
           </polyline>
         </geometry>
         <material>
@@ -413,7 +413,7 @@
             <point>1.9 4.32</point>
             <point>0.8 4.76</point>
 
-            <height>2.0</height>
+            <height>0.35</height>
           </polyline>
         </geometry>
       </collision>
@@ -430,7 +430,7 @@
             <point>1.9 4.32</point>
             <point>0.8 4.76</point>
 
-            <height>2.0</height>
+            <height>0.35</height>
           </polyline>
         </geometry>
         <material>
@@ -471,7 +471,7 @@
             <point>0.8 7.45</point>
             <point>0.8 8.2</point>
 
-            <height>2.0</height>
+            <height>0.35</height>
           </polyline>
         </geometry>
       </collision>
@@ -492,7 +492,7 @@
             <point>0.8 7.45</point>
             <point>0.8 8.2</point>
 
-            <height>2.0</height>
+            <height>0.35</height>
           </polyline>
         </geometry>
         <material>
@@ -533,7 +533,7 @@
             <point>4.52 0.75</point>
             <point>4.48 1.2</point>
 
-            <height>2.0</height>
+            <height>0.35</height>
           </polyline>
         </geometry>
       </collision>
@@ -554,7 +554,7 @@
             <point>4.52 0.75</point>
             <point>4.48 1.2</point>
 
-            <height>2.0</height>
+            <height>0.35</height>
           </polyline>
         </geometry>
         <material>
@@ -595,7 +595,7 @@
             <point>10.2 -8.2</point>
             <point>0.8 -8.2</point>
 
-            <height>2.0</height>
+            <height>0.35</height>
           </polyline>
         </geometry>
       </collision>
@@ -616,7 +616,7 @@
             <point>10.2 -8.2</point>
             <point>0.8 -8.2</point>
 
-            <height>2.0</height>
+            <height>0.35</height>
           </polyline>
         </geometry>
         <material>
@@ -653,7 +653,7 @@
             <point>0.8 -5.45</point>
             <point>0.8 -4.76</point>
 
-            <height>2.0</height>
+            <height>0.35</height>
           </polyline>
         </geometry>
       </collision>
@@ -670,7 +670,7 @@
             <point>0.8 -5.45</point>
             <point>0.8 -4.76</point>
 
-            <height>2.0</height>
+            <height>0.35</height>
           </polyline>
         </geometry>
         <material>
@@ -711,7 +711,7 @@
             <point>-10.2 8.2</point>
             <point>-0.8 8.2</point>
 
-            <height>2.0</height>
+            <height>0.35</height>
           </polyline>
         </geometry>
       </collision>
@@ -732,7 +732,7 @@
             <point>-10.2 8.2</point>
             <point>-0.8 8.2</point>
 
-            <height>2.0</height>
+            <height>0.35</height>
           </polyline>
         </geometry>
         <material>
@@ -769,7 +769,7 @@
             <point>-0.8 5.45</point>
             <point>-0.8 4.76</point>
 
-            <height>2.0</height>
+            <height>0.35</height>
           </polyline>
         </geometry>
       </collision>
@@ -786,7 +786,7 @@
             <point>-0.8 5.45</point>
             <point>-0.8 4.76</point>
 
-            <height>2.0</height>
+            <height>0.35</height>
           </polyline>
         </geometry>
         <material>
@@ -827,7 +827,7 @@
             <point>-10.2 -1.2</point>
             <point>-10.2 1.2</point>
 
-            <height>2.0</height>
+            <height>0.35</height>
           </polyline>
         </geometry>
       </collision>
@@ -848,7 +848,7 @@
             <point>-10.2 -1.2</point>
             <point>-10.2 1.2</point>
 
-            <height>2.0</height>
+            <height>0.35</height>
           </polyline>
         </geometry>
         <material>
@@ -885,7 +885,7 @@
             <point>-1.9 -4.32</point>
             <point>-0.8 -4.76</point>
 
-            <height>2.0</height>
+            <height>0.35</height>
           </polyline>
         </geometry>
       </collision>
@@ -902,7 +902,7 @@
             <point>-1.9 -4.32</point>
             <point>-0.8 -4.76</point>
 
-            <height>2.0</height>
+            <height>0.35</height>
           </polyline>
         </geometry>
         <material>
@@ -943,7 +943,7 @@
             <point>-0.8 -7.45</point>
             <point>-0.8 -8.2</point>
 
-            <height>2.0</height>
+            <height>0.35</height>
           </polyline>
         </geometry>
       </collision>
@@ -964,7 +964,7 @@
             <point>-0.8 -7.45</point>
             <point>-0.8 -8.2</point>
 
-            <height>2.0</height>
+            <height>0.35</height>
           </polyline>
         </geometry>
         <material>
@@ -997,7 +997,7 @@
             <point>2.8 1.55</point>
             <point>2.69 1.72</point>
 
-            <height>2.0</height>
+            <height>0.35</height>
           </polyline>
         </geometry>
       </collision>
@@ -1010,7 +1010,7 @@
             <point>2.8 1.55</point>
             <point>2.69 1.72</point>
 
-            <height>2.0</height>
+            <height>0.35</height>
           </polyline>
         </geometry>
         <material>
@@ -1044,7 +1044,7 @@
             <point>2.28 4.03</point>
             <point>1.12 3.0</point>
 
-            <height>2.0</height>
+            <height>0.35</height>
           </polyline>
         </geometry>
       </collision>
@@ -1058,7 +1058,7 @@
             <point>2.28 4.03</point>
             <point>1.12 3.0</point>
 
-            <height>2.0</height>
+            <height>0.35</height>
           </polyline>
         </geometry>
         <material>
@@ -1092,7 +1092,7 @@
             <point>3.05 -0.95</point>
             <point>3.06 -0.929</point>
 
-            <height>2.0</height>
+            <height>0.35</height>
           </polyline>
         </geometry>
       </collision>
@@ -1106,7 +1106,7 @@
             <point>3.05 -0.95</point>
             <point>3.06 -0.929</point>
 
-            <height>2.0</height>
+            <height>0.35</height>
           </polyline>
         </geometry>
         <material>
@@ -1140,7 +1140,7 @@
             <point>4.52 0.75</point>
             <point>3.11 0.75</point>
 
-            <height>2.0</height>
+            <height>0.35</height>
           </polyline>
         </geometry>
       </collision>
@@ -1154,7 +1154,7 @@
             <point>4.52 0.75</point>
             <point>3.11 0.75</point>
 
-            <height>2.0</height>
+            <height>0.35</height>
           </polyline>
         </geometry>
         <material>
@@ -1188,7 +1188,7 @@
             <point>0.9 -3.07</point>
             <point>0.929 -3.06</point>
 
-            <height>2.0</height>
+            <height>0.35</height>
           </polyline>
         </geometry>
       </collision>
@@ -1202,7 +1202,7 @@
             <point>0.9 -3.07</point>
             <point>0.929 -3.06</point>
 
-            <height>2.0</height>
+            <height>0.35</height>
           </polyline>
         </geometry>
         <material>
@@ -1235,7 +1235,7 @@
             <point>3.74 -2.65</point>
             <point>2.69 -1.72</point>
 
-            <height>2.0</height>
+            <height>0.35</height>
           </polyline>
         </geometry>
       </collision>
@@ -1248,7 +1248,7 @@
             <point>3.74 -2.65</point>
             <point>2.69 -1.72</point>
 
-            <height>2.0</height>
+            <height>0.35</height>
           </polyline>
         </geometry>
         <material>
@@ -1282,7 +1282,7 @@
             <point>-0.9 3.07</point>
             <point>-0.929 3.06</point>
 
-            <height>2.0</height>
+            <height>0.35</height>
           </polyline>
         </geometry>
       </collision>
@@ -1296,7 +1296,7 @@
             <point>-0.9 3.07</point>
             <point>-0.929 3.06</point>
 
-            <height>2.0</height>
+            <height>0.35</height>
           </polyline>
         </geometry>
         <material>
@@ -1329,7 +1329,7 @@
             <point>-3.74 2.65</point>
             <point>-2.69 1.72</point>
 
-            <height>2.0</height>
+            <height>0.35</height>
           </polyline>
         </geometry>
       </collision>
@@ -1342,7 +1342,7 @@
             <point>-3.74 2.65</point>
             <point>-2.69 1.72</point>
 
-            <height>2.0</height>
+            <height>0.35</height>
           </polyline>
         </geometry>
         <material>
@@ -1376,7 +1376,7 @@
             <point>-3.05 0.95</point>
             <point>-3.06 0.929</point>
 
-            <height>2.0</height>
+            <height>0.35</height>
           </polyline>
         </geometry>
       </collision>
@@ -1390,7 +1390,7 @@
             <point>-3.05 0.95</point>
             <point>-3.06 0.929</point>
 
-            <height>2.0</height>
+            <height>0.35</height>
           </polyline>
         </geometry>
         <material>
@@ -1424,7 +1424,7 @@
             <point>-4.52 -0.75</point>
             <point>-3.11 -0.75</point>
 
-            <height>2.0</height>
+            <height>0.35</height>
           </polyline>
         </geometry>
       </collision>
@@ -1438,7 +1438,7 @@
             <point>-4.52 -0.75</point>
             <point>-3.11 -0.75</point>
 
-            <height>2.0</height>
+            <height>0.35</height>
           </polyline>
         </geometry>
         <material>
@@ -1471,7 +1471,7 @@
             <point>-2.8 -1.55</point>
             <point>-2.69 -1.72</point>
 
-            <height>2.0</height>
+            <height>0.35</height>
           </polyline>
         </geometry>
       </collision>
@@ -1484,7 +1484,7 @@
             <point>-2.8 -1.55</point>
             <point>-2.69 -1.72</point>
 
-            <height>2.0</height>
+            <height>0.35</height>
           </polyline>
         </geometry>
         <material>
@@ -1518,9 +1518,9 @@
             <point>-2.28 -4.03</point>
             <point>-1.12 -3.0</point>
 
-            <height>2.0</height>
+            <height>0.35</height>
           </polyline>
-        </geometry>
+        </geometry> 
       </collision>
       <visual name='hall_central_circle_guest_room_1_visual'>
         <geometry>
@@ -1532,7 +1532,7 @@
             <point>-2.28 -4.03</point>
             <point>-1.12 -3.0</point>
 
-            <height>2.0</height>
+            <height>0.35</height>
           </polyline>
         </geometry>
         <material>
@@ -1565,7 +1565,7 @@
             <point>0.8 7.65</point>
             <point>0.8 7.45</point>
 
-            <height>2.0</height>
+            <height>0.35</height>
           </polyline>
         </geometry>
       </collision>
@@ -1578,7 +1578,7 @@
             <point>0.8 7.65</point>
             <point>0.8 7.45</point>
 
-            <height>2.0</height>
+            <height>0.35</height>
           </polyline>
         </geometry>
         <material>
@@ -1611,7 +1611,7 @@
             <point>-0.8 5.45</point>
             <point>0.8 5.45</point>
 
-            <height>2.0</height>
+            <height>0.35</height>
           </polyline>
         </geometry>
       </collision>
@@ -1624,7 +1624,7 @@
             <point>-0.8 5.45</point>
             <point>0.8 5.45</point>
 
-            <height>2.0</height>
+            <height>0.35</height>
           </polyline>
         </geometry>
         <material>
@@ -1657,7 +1657,7 @@
             <point>0.8 -5.25</point>
             <point>0.8 -5.45</point>
 
-            <height>2.0</height>
+            <height>0.35</height>
           </polyline>
         </geometry>
       </collision>
@@ -1670,7 +1670,7 @@
             <point>0.8 -5.25</point>
             <point>0.8 -5.45</point>
 
-            <height>2.0</height>
+            <height>0.35</height>
           </polyline>
         </geometry>
         <material>
@@ -1703,7 +1703,7 @@
             <point>-0.8 -7.45</point>
             <point>0.8 -7.45</point>
 
-            <height>2.0</height>
+            <height>0.35</height>
           </polyline>
         </geometry>
       </collision>
@@ -1716,7 +1716,7 @@
             <point>-0.8 -7.45</point>
             <point>0.8 -7.45</point>
 
-            <height>2.0</height>
+            <height>0.35</height>
           </polyline>
         </geometry>
         <material>

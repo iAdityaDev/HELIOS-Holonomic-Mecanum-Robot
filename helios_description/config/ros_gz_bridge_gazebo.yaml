@@ -9,7 +9,8 @@
   ros_type_name: "geometry_msgs/msg/Twist"
   gz_type_name: "gz.msgs.Twist"
   direction: ROS_TO_GZ
-
+  lazy: false
+  
 # odom — Gazebo → ROS
 - ros_topic_name: "/mecanum_drive_controller/odometry"
   gz_topic_name: "/mecanum_drive_controller/odometry"
@@ -37,3 +38,6 @@
 #   ros_type_name: "sensor_msgs/msg/JointState"
 #   gz_type_name: "gz.msgs.Model"
 #   direction: GZ_TO_ROS
+
+
+
