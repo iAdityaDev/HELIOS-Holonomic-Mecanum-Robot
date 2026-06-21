@@ -10,11 +10,11 @@
 <xacro:include filename="$(find helios_description)/urdf/helios_description.gazebo" />
 
 <!-- ros2_control hardware interface block -->
-<xacro:include filename="$(find helios_description)/urdf/gazebo_sim_ros2_control.urdf.xacro" />
+<!-- <xacro:include filename="$(find helios_description)/urdf/gazebo_sim_ros2_control.urdf.xacro" /> -->
 
 <!-- Gazebo plugin that loads gz_ros2_control -->
 <xacro:include filename="$(find helios_description)/urdf/helios_description.ros2control.xacro" />
-<xacro:load_gazebo_sim_ros2_control_plugin robot_name="helios" use_gazebo="true"/>
+<!-- <xacro:load_gazebo_sim_ros2_control_plugin robot_name="helios" use_gazebo="true"/> -->
 
 
 
@@ -160,7 +160,7 @@
              ixy="0.0" iyz="0.0" ixz="0.0"/>
   </inertial>
   <visual>
-    <origin xyz="0.064941 0.085 -0.031781" rpy="0 0 0"/>
+    <origin xyz="0.064941 0.085 -0.030131" rpy="0 0 0"/>
     <geometry>
       <mesh filename="file://$(find helios_description)/meshes/Wheel_rear_right_1.stl"
             scale="0.001 0.001 0.001"/>

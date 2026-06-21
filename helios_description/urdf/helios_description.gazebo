@@ -7,6 +7,16 @@
 <xacro:property name="gps_color" value="Gazebo/Black" />
 <xacro:property name="lidar_color" value="Gazebo/Blue" />
 
+
+<gazebo>
+    <plugin filename="gz_ros2_control-system" name="gz_ros2_control::GazeboSimROS2ControlPlugin">
+        <parameters>$(find helios_description)/config/controllers.yaml</parameters>
+        <ros>
+            <remapping>/controller_manager/robot_description:=/robot_description</remapping>
+        </ros>
+    </plugin>
+</gazebo>
+
 <gazebo reference="base_link">
   <material>${body_color}</material>
   <mu1>0.2</mu1>
@@ -65,7 +75,7 @@
 </gazebo> -->
 
 
-<gazebo reference="Wheel_front_left_1">
+<!-- <gazebo reference="Wheel_front_left_1">
   <material>${wheel_color}</material>
   <mu1>1.0</mu1>
   <mu2>0.5</mu2>
@@ -74,8 +84,86 @@
   <kd>1.0</kd>
   <minDepth>0.001</minDepth>
   <self_collide>false</self_collide>
+</gazebo> -->
+
+
+<gazebo reference="Wheel_front_left_1">
+  <surface>
+    <friction>
+      <ode>
+          <mu>1.0</mu>
+          <mu2>0.0</mu2>
+      </ode>
+    </friction>
+  </surface>
+  <visual>
+      <material>
+          <ambient>0.2 0.2 0.2 1.0</ambient>
+          <diffuse>0.2 0.2 0.2 1.0</diffuse>
+          <specular>0.2 0.2 0.2 1.0</specular>
+          <emissive>0.0 0.0 0.0 0.0</emissive>
+      </material>
+  </visual>
 </gazebo>
 
+
+<gazebo reference="Wheel_front_right_1">
+  <surface>
+    <friction>
+      <ode>
+          <mu>1.0</mu>
+          <mu2>0.0</mu2>
+      </ode>
+    </friction>
+  </surface>
+  <visual>
+      <material>
+          <ambient>0.2 0.2 0.2 1.0</ambient>
+          <diffuse>0.2 0.2 0.2 1.0</diffuse>
+          <specular>0.2 0.2 0.2 1.0</specular>
+          <emissive>0.0 0.0 0.0 0.0</emissive>
+      </material>
+  </visual>
+</gazebo>
+
+<gazebo reference="Wheel_rear_left_1">
+  <surface>
+    <friction>
+      <ode>
+          <mu>1.0</mu>
+          <mu2>0.0</mu2>
+      </ode>
+    </friction>
+  </surface>
+  <visual>
+      <material>
+          <ambient>0.2 0.2 0.2 1.0</ambient>
+          <diffuse>0.2 0.2 0.2 1.0</diffuse>
+          <specular>0.2 0.2 0.2 1.0</specular>
+          <emissive>0.0 0.0 0.0 0.0</emissive>
+      </material>
+  </visual>
+</gazebo>
+
+<gazebo reference="Wheel_rear_right_1">
+  <surface>
+    <friction>
+      <ode>
+          <mu>1.0</mu>
+          <mu2>0.0</mu2>
+      </ode>
+    </friction>
+  </surface>
+  <visual>
+      <material>
+          <ambient>0.2 0.2 0.2 1.0</ambient>
+          <diffuse>0.2 0.2 0.2 1.0</diffuse>
+          <specular>0.2 0.2 0.2 1.0</specular>
+          <emissive>0.0 0.0 0.0 0.0</emissive>
+      </material>
+  </visual>
+</gazebo>
+<!-- 
 <gazebo reference="Wheel_front_right_1">
   <material>${wheel_color}</material>
   <mu1>1.0</mu1>
@@ -85,8 +173,8 @@
   <kd>1.0</kd>
   <minDepth>0.001</minDepth>
   <self_collide>false</self_collide>
-</gazebo>
-
+</gazebo> -->
+<!-- 
 <gazebo reference="Wheel_rear_left_1">
   <material>${wheel_color}</material>
   <mu1>1.0</mu1>
@@ -96,8 +184,8 @@
   <kd>1.0</kd>
   <minDepth>0.001</minDepth>
   <self_collide>false</self_collide>
-</gazebo>
-
+</gazebo> -->
+<!-- 
 <gazebo reference="Wheel_rear_right_1">
   <material>${wheel_color}</material>
   <mu1>1.0</mu1>
@@ -107,6 +195,6 @@
   <kd>1.0</kd>
   <minDepth>0.001</minDepth>
   <self_collide>false</self_collide>
-</gazebo>
+</gazebo> -->
 
 </robot>

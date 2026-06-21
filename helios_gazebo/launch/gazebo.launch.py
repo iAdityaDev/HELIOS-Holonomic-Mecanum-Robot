@@ -120,7 +120,7 @@ def generate_launch_description():
     )
 
     return LaunchDescription([
-        declare_load_controllers_cmd,
+        # declare_load_controllers_cmd,
 
         gazebo_model_path,
         gazebo,
@@ -128,6 +128,6 @@ def generate_launch_description():
         spawn,
         start_gazebo_ros_bridge_cmd,
 
-        load_controllers_cmd,
-        load_mecanum_on_jsb_exit,
+        # load_controllers_cmd,
+        # load_mecanum_on_jsb_exit,
     ])
