@@ -4,19 +4,19 @@
   gz_type_name: "gz.msgs.Clock"
   direction: GZ_TO_ROS
 
-- ros_topic_name: "/mecanum_drive_controller/cmd_vel"
-  gz_topic_name: "/mecanum_drive_controller/cmd_vel"
-  ros_type_name: "geometry_msgs/msg/Twist"
-  gz_type_name: "gz.msgs.Twist"
-  direction: ROS_TO_GZ
-  lazy: false
+# - ros_topic_name: "/mecanum_drive_controller/cmd_vel"
+#   gz_topic_name: "/mecanum_drive_controller/cmd_vel"
+#   ros_type_name: "geometry_msgs/msg/Twist"
+#   gz_type_name: "gz.msgs.Twist"
+#   direction: ROS_TO_GZ
+#   lazy: false
   
 # odom — Gazebo → ROS
-- ros_topic_name: "/mecanum_drive_controller/odometry"
-  gz_topic_name: "/mecanum_drive_controller/odometry"
-  ros_type_name: "nav_msgs/msg/Odometry"
-  gz_type_name: "gz.msgs.Odometry"
-  direction: GZ_TO_ROS
+# - ros_topic_name: "/mecanum_drive_controller/odometry"
+#   gz_topic_name: "/mecanum_drive_controller/odometry"
+#   ros_type_name: "nav_msgs/msg/Odometry"
+#   gz_type_name: "gz.msgs.Odometry"
+#   direction: GZ_TO_ROS
 
 # tf — Gazebo → ROS
 # - ros_topic_name: "/tf"
@@ -26,11 +26,11 @@
 #   direction: GZ_TO_ROS
 
 # joint states — Gazebo → ROS
-- ros_topic_name: "/joint_states"
-  gz_topic_name: "/joint_states"
-  ros_type_name: "sensor_msgs/msg/JointState"
-  gz_type_name: "gz.msgs.Model"
-  direction: GZ_TO_ROS
+# - ros_topic_name: "/joint_states"
+  # gz_topic_name: "/joint_states"
+  # ros_type_name: "sensor_msgs/msg/JointState"
+  # gz_type_name: "gz.msgs.Model"
+  # direction: GZ_TO_ROS
 
 
 # - ros_topic_name: "/joint_states"

@@ -1,23 +1,9 @@
 <?xml version="1.0" ?>
 <robot name="chipta" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
-  <xacro:arg name="robot_name" default="helios"/>
-  <xacro:arg name="prefix" default=""/>
-  <xacro:arg name="use_gazebo" default="false"/>
-
-
 <xacro:include filename="$(find helios_description)/urdf/materials.xacro" />
-<xacro:include filename="$(find helios_description)/urdf/helios_description.gazebo" />
-
-<!-- ros2_control hardware interface block -->
-<!-- <xacro:include filename="$(find helios_description)/urdf/gazebo_sim_ros2_control.urdf.xacro" /> -->
-
-<!-- Gazebo plugin that loads gz_ros2_control -->
 <xacro:include filename="$(find helios_description)/urdf/helios_description.ros2control.xacro" />
-<!-- <xacro:load_gazebo_sim_ros2_control_plugin robot_name="helios" use_gazebo="true"/> -->
-
-
-
+<xacro:include filename="$(find helios_description)/urdf/helios_description.gazebo" />
 
 <link name="base_footprint"/>
 
@@ -107,94 +93,89 @@
 
 
 
-<!-- ══ FL ══ -->
-<link name="Wheel_front_left_1">
+<link name="Wheel_front_left_1">  
   <inertial>
-    <origin xyz="0 0 0" rpy="0 0 0"/>
-    <mass value="0.1"/>
-    <inertia ixx="6.4e-05" iyy="6.4e-05" izz="6.4e-05"
-             ixy="0.0" iyz="0.0" ixz="0.0"/>
+    <origin xyz="-1.27101263236451e-07 0.013847399301558358 -3.5503662683053494e-07" rpy="0 0 0"/>
+    <mass value="0.032871818242545134"/>
+    <inertia ixx="1e-05" iyy="1.8e-05" izz="1e-05" ixy="0.0" iyz="0.0" ixz="0.0"/>
   </inertial>
   <visual>
     <origin xyz="-0.064778 -0.085 -0.030131" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find helios_description)/meshes/Wheel_front_left_1.stl"
-            scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find helios_description)/meshes/Wheel_front_left_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
-    <origin xyz="0 0 0" rpy="0 0 0"/>
-    <geometry><sphere radius="0.04"/></geometry>
+    <origin xyz="-0.064778 -0.085 -0.030131" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find helios_description)/meshes/Wheel_front_left_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
   </collision>
 </link>
 
-<!-- ══ FR ══ -->
 <link name="Wheel_front_right_1">
   <inertial>
-    <origin xyz="0 0 0" rpy="0 0 0"/>
-    <mass value="0.1"/>
-    <inertia ixx="6.4e-05" iyy="6.4e-05" izz="6.4e-05"
-             ixy="0.0" iyz="0.0" ixz="0.0"/>
+    <origin xyz="-1.545012792147915e-07 -0.013722805579174657 -4.273110922881074e-07" rpy="0 0 0"/>
+    <mass value="0.0361026849885689"/>
+    <inertia ixx="1.2e-05" iyy="2.1e-05" izz="1.2e-05" ixy="0.0" iyz="0.0" ixz="-0.0"/>
   </inertial>
   <visual>
     <origin xyz="-0.064778 0.085 -0.030131" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find helios_description)/meshes/Wheel_front_right_1.stl"
-            scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find helios_description)/meshes/Wheel_front_right_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
-    <origin xyz="0 0 0" rpy="0 0 0"/>
-    <geometry><sphere radius="0.04"/></geometry>
+    <origin xyz="-0.064778 0.085 -0.030131" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find helios_description)/meshes/Wheel_front_right_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
   </collision>
 </link>
 
-<!-- ══ RR ══ -->
 <link name="Wheel_rear_right_1">
   <inertial>
-    <origin xyz="0 0 0" rpy="0 0 0"/>
-    <mass value="0.1"/>
-    <inertia ixx="6.4e-05" iyy="6.4e-05" izz="6.4e-05"
-             ixy="0.0" iyz="0.0" ixz="0.0"/>
+    <origin xyz="2.3534519708046098e-08 -0.013847399301558358 -3.560736444099821e-07" rpy="0 0 0"/>
+    <mass value="0.032871818242545016"/>
+    <inertia ixx="1e-05" iyy="1.8e-05" izz="1e-05" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
   </inertial>
   <visual>
-    <origin xyz="0.064941 0.085 -0.030131" rpy="0 0 0"/>
+    <origin xyz="0.064941 0.085 -0.031781" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find helios_description)/meshes/Wheel_rear_right_1.stl"
-            scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find helios_description)/meshes/Wheel_rear_right_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
-    <origin xyz="0 0 0" rpy="0 0 0"/>
-    <geometry><sphere radius="0.04"/></geometry>
+    <origin xyz="0.064941 0.085 -0.031781" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find helios_description)/meshes/Wheel_rear_right_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
   </collision>
 </link>
 
-<!-- ══ RL ══ -->
 <link name="Wheel_rear_left_1">
   <inertial>
-    <origin xyz="0 0 0" rpy="0 0 0"/>
-    <mass value="0.1"/>
-    <inertia ixx="6.4e-05" iyy="6.4e-05" izz="6.4e-05"
-             ixy="0.0" iyz="0.0" ixz="0.0"/>
+    <origin xyz="5.994378951545976e-08 0.013722802958087754 -4.3329028434624384e-07" rpy="0 0 0"/>
+    <mass value="0.03610268483883613"/>
+    <inertia ixx="1.2e-05" iyy="2.1e-05" izz="1.2e-05" ixy="0.0" iyz="-0.0" ixz="0.0"/>
   </inertial>
   <visual>
     <origin xyz="0.064941 -0.085 -0.030131" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find helios_description)/meshes/Wheel_rear_left_1.stl"
-            scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find helios_description)/meshes/Wheel_rear_left_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
-    <origin xyz="0 0 0" rpy="0 0 0"/>
-    <geometry><sphere radius="0.04"/></geometry>
+    <origin xyz="0.064941 -0.085 -0.030131" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find helios_description)/meshes/Wheel_rear_left_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
   </collision>
 </link>
-
 
 <joint name="fixed_base_joint" type="fixed">
   <parent link="base_footprint" />
