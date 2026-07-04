@@ -4,8 +4,8 @@
 <!-- option for the types are sensor actuator and system -->
     <ros2_control name="HeliosBaseHardwareInterface" type="system">  
         <hardware>
-            <plugin>mock_components/GenericSystem</plugin>
-            <!-- <plugin>gz_ros2_control/GazeboSimSystem</plugin> -->
+            <!-- <plugin>mock_components/GenericSystem</plugin> -->
+            <plugin>gz_ros2_control/GazeboSimSystem</plugin>
             <param name="calculate_dynamics">true</param>
         </hardware>
 
