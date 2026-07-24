@@ -1,6 +1,9 @@
 from launch import LaunchDescription
 from launch_ros.actions import Node 
-
+import os
+from ament_index_python.packages import get_package_share_directory
+from launch.actions import IncludeLaunchDescription
+from launch.launch_description_sources import PythonLaunchDescriptionSource
 
 def generate_launch_description():
 
@@ -28,10 +31,21 @@ def generate_launch_description():
         # namespace='',
     )
 
+    rviz_launch = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(
+            os.path.join(
+                get_package_share_directory('helios_description'),
+                'launch',
+                'display.launch.py'
+            )
+        )
+    )
+
     
         
     return LaunchDescription([
+        rviz_launch,
         twist2pwm,
         diff_tf,
-        fkenc,
+        # fkenc,
     ])

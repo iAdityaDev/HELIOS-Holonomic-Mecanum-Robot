@@ -59,7 +59,7 @@ class DiffTF(Node):
         self.th = 0.0
         self.circumference = math.pi * self.wheel_diameter
         self.max_speed = (self.circumference * self.motor_rpm) / 60
-        self.max_angular = self.max_speed/(self.wheel_diameter/2)
+        self.max_anigular = self.max_speed/(self.wheel_diameter/2)
 
         self.last_time = 0.0
         self.create_timer(1.0 / self.rate_hz, self.update)
