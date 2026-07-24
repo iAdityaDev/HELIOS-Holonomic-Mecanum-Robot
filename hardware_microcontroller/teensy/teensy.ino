@@ -7,41 +7,23 @@
 #include <geometry_msgs/msg/twist.h>
 #include <std_msgs/msg/int64.h>
 
-// #define RPWM1 23   // fr    
-// #define LPWM1 22     
-// #define RPWM2 18     //fl
-// #define LPWM2 19      
-// #define RPWM3  2    // rr
-// #define LPWM3 4
-// #define RPWM4  5    // rl
-// #define LPWM4 21
-
-// #define FR_ENC_A 34   // fr    
-// #define FR_ENC_B 35    
-// #define FL_ENC_A 32     //fl
-// #define FL_ENC_B 33      
-// #define RR_ENC_A  26    // rr
-// #define RR_ENC_B 25
-// #define RL_ENC_A  14    // rl
-// #define RL_ENC_B 27
-
-#define RPWM1 25   // fr    
-#define LPWM1 26     
-#define RPWM2 32     //fl
-#define LPWM2 33      
+#define RPWM1 33   // fr    
+#define LPWM1 32     
+#define RPWM2 25     //fl
+#define LPWM2 26      
 #define RPWM3 4    // rr
-#define LPWM3 13     //5L
-#define RPWM4 15    // rl
-#define LPWM4 2
+#define LPWM3 2     
+#define RPWM4 13    // rl
+#define LPWM4 15
 
-#define FR_ENC_A 35   // fr    
-#define FR_ENC_B 34    
-#define FL_ENC_A 14     //fl
-#define FL_ENC_B 27      
-#define RR_ENC_A 18    // rr
-#define RR_ENC_B 19
+#define FR_ENC_A 34   // fr    
+#define FR_ENC_B 35    
+#define FL_ENC_A 27     //fl
+#define FL_ENC_B 14      
+#define RR_ENC_A 19    // rr
+#define RR_ENC_B 23
 #define RL_ENC_A 12    // rl
-#define RL_ENC_B 23
+#define RL_ENC_B 18
 
 rcl_publisher_t fr_enc_pub;
 rcl_publisher_t fl_enc_pub;
@@ -151,8 +133,8 @@ void IRAM_ATTR update_fr_enc() {
   else fr_enc_value++;
 }
 void IRAM_ATTR update_fl_enc() {
-  if (digitalRead(FL_ENC_A) == digitalRead(FL_ENC_B)) fl_enc_value--;
-  else fl_enc_value++;
+  if (digitalRead(FL_ENC_A) == digitalRead(FL_ENC_B)) fl_enc_value++;
+  else fl_enc_value--;
 }
 void IRAM_ATTR update_rr_enc() {
   if (digitalRead(RR_ENC_A) == digitalRead(RR_ENC_B)) rr_enc_value--;
